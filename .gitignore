@@ -1,0 +1,105 @@
+# ===================================
+# Checkpoints de Jupyter
+# ===================================
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ===================================
+# Archivos de datos generados
+# ===================================
+# CSV generados por los notebooks
+02_notebooks/calendar_events.csv
+02_notebooks/clustering_data.csv
+02_notebooks/clustering_store_data.csv
+02_notebooks/daily_calendar_with_events.csv
+02_notebooks/item_prices.csv
+02_notebooks/item_prices.csvn8ykkrbv.part
+02_notebooks/item_sales.csv
+02_notebooks/prediction_result_data.csv
+02_notebooks/ventas.csv
+
+# Archivos Parquet
+02_notebooks/*.parquet
+*.parquet
+
+# Notebooks ejecutados por el orquestador
+02_notebooks/executed_*.ipynb
+
+# ===================================
+# Logs del orquestador
+# ===================================
+00_orquestador/logs/
+*.log
+
+# ===================================
+# Python
+# ===================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===================================
+# Entornos virtuales
+# ===================================
+venv/
+env/
+ENV/
+.venv
+venv.bak/
+env.bak/
+
+# ===================================
+# IDEs y Editores
+# ===================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+.ropeproject
+
+# ===================================
+# Sistema Operativo
+# ===================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ===================================
+# Jupyter Notebook
+# ===================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ===================================
+# Archivos temporales
+# ===================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*~.nib
