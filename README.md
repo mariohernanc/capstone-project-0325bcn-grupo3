@@ -97,12 +97,13 @@ git clone [url-del-repositorio]
 cd capstone-project-0325bcn-grupo3
 ```
 
-2. **Instalar dependencias**
+2. **Ejecutar orquestadoro**
 ```bash
-pip install pandas numpy scikit-learn xgboost matplotlib seaborn jupyter
+cd 00_orquestador
+python orquestador.py
 ```
 
-3. **Ejecutar notebooks en orden**
+3. **Internamente ejecuta notebooks en orden**
 ```bash
 notebook 02_notebooks/01_DSMarket_data_preparation.ipynb
 notebook 02_notebooks/02_DSMarket_Clustering.ipynb

@@ -12,11 +12,18 @@
 02_notebooks/clustering_data.csv
 02_notebooks/clustering_store_data.csv
 02_notebooks/daily_calendar_with_events.csv
+02_notebooks/df_final_SS.csv
 02_notebooks/item_prices.csv
-02_notebooks/item_prices.csvn8ykkrbv.part
 02_notebooks/item_sales.csv
 02_notebooks/prediction_result_data.csv
 02_notebooks/ventas.csv
+02_notebooks/xgb_model_ds_market.json
+02_notebooks/df_final_SS.csv
+02_notebooks/df_prediction_1
+02_notebooks/df_prediction_2
+02_notebooks/df_prediction_3
+02_notebooks/df_prediction_4
+02_notebooks/df_prediction_4.csv
 
 # Archivos Parquet
 02_notebooks/*.parquet
@@ -30,6 +37,7 @@
 # ===================================
 00_orquestador/logs/
 *.log
+logs/
 
 # ===================================
 # Python

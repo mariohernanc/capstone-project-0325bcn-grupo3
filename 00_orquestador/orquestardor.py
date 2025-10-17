@@ -156,7 +156,11 @@ def main():
     notebooks = [
         "01_DSMarket_data_preparation.ipynb",
         "02_DSMarket_Clustering.ipynb",
-        "03_DSMarket_forecasting.ipynb"
+        "03_DSMarket_forecasting_inicial.ipynb",
+        "03_DSMarket_forecasting_semana_2.ipynb",
+        "03_DSMarket_forecasting_semana_3.ipynb",
+        "03_DSMarket_forecasting_semana_4.ipynb",
+        "04_DSMarket_SS_calculation.ipynb"
     ]
     
     # Crear y ejecutar orquestador
