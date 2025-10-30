@@ -8,15 +8,29 @@ El proyecto DSMarket analiza datos históricos de ventas de una cadena retail pa
 - Segmentar tiendas según patrones de comportamiento
 - Clasificar productos en clusters similares
 - Predecir ventas futuras usando modelos de machine learning
+- Establecer stock de seguridad, punto de reorden, y cantidades a reponer en un sistema de inventarios
 
 ## 🗂️ Estructura del Proyecto
 
 ```
+00_orquestador/
+└── orquestador.py
+
 02_notebooks/
 ├── 01_DSMarket_data_preparation.ipynb
 ├── 02_DSMarket_Clustering.ipynb
-└── 03_DSMarket_forecasting.ipynb
+├── 03_DSMarket_forecasting.ipynb
+└── 04_DSMarket_SS_calculation.ipynb
 ```
+
+## 📚 Orquestador
+### `orquestador.py`
+**Ejecucion secuencial de notebooks**
+
+- Prepara el entorno para la ejecucion de los notebooks
+- Ejecuta los notebooks secuencialmente de acuerdo a los parametros del script
+- Realiza limpieza de memoria para optimizar el rendimiento
+- Crea e imprime en pantalla los logs correspondientes a cada ejecucion, mostrando errores si lo hubiere, o el detalle de la ejecucion.
 
 ## 📚 Notebooks
 
@@ -34,14 +48,6 @@ El proyecto DSMarket analiza datos históricos de ventas de una cadena retail pa
 
 ### 2. `02_DSMarket_Clustering.ipynb`
 **Análisis de Clustering**
-
-#### Clustering de Tiendas
-Segmentación de las 10 tiendas en 4 clusters:
-
-- **Cluster 0 - "Tiendas Irregulares"**: 1 tienda con comportamiento atípico y alta variabilidad
-- **Cluster 1 - "Tiendas Estables"**: 6 tiendas estables, base del negocio (60% de la red)
-- **Cluster 2 - "Tiendas Premium"**: 1 tienda estelar con máximo rendimiento
-- **Cluster 3 - "Tiendas Bajo Renidimiento"**: 2 tiendas con potencial de mejora
 
 #### Clustering de Items
 Segmentación de productos por patrones de venta y características.
@@ -65,6 +71,14 @@ Segmentación de productos por patrones de venta y características.
 - Variables predictoras: item, category, department, store_code, region, yearweek, event
 - Variable objetivo: n_sales (número de ventas)
 - Predicciones redondeadas a enteros para interpretación práctica
+
+### 4. `04_DSMarket_SS_calculation.ipynb`
+**Calculo de Stock de seguridad y metricas de reposicion de inventario**
+
+- Calculo de inventario de seguridad por item y tienda en funcion de la metrica RMS
+- Calculo del punto de reorden para cada item en cada tienda
+- Calculo de la cantidad a ordenar en funcion de la demanda y variables previas
+
 
 ## 🔧 Tecnologías Utilizadas
 
@@ -97,7 +111,7 @@ git clone [url-del-repositorio]
 cd capstone-project-0325bcn-grupo3
 ```
 
-2. **Ejecutar orquestadoro**
+2. **Ejecutar orquestador**
 ```bash
 cd 00_orquestador
 python orquestador.py
